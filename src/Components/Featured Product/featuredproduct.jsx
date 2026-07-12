@@ -1,7 +1,21 @@
 import React from 'react'
 import ProductCard from '../Product Card/productcard'
 
-const featuredproduct = () => {
+import img1 from '../../assets/01.webp'
+import img2 from '../../assets/02.webp'
+import img3 from '../../assets/03.webp'
+import img4 from '../../assets/04.webp'
+import img5 from '../../assets/05.webp'
+
+const products = [
+    { id: 1, image: img1, name: 'Classic White Sneakers', price: '49' },
+    { id: 2, image: img2, name: 'Leather Crossbody Bag', price: '79' },
+    { id: 3, image: img3, name: 'Denim Jacket', price: '99' },
+    { id: 4, image: img4, name: 'Summer Floral Dress', price: '59' },
+    { id: 5, image: img5, name: 'Aviator Sunglasses', price: '35' },
+]
+
+const FeaturedProduct = () => {
     return (
         <div>
 
@@ -11,16 +25,18 @@ const featuredproduct = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4">
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-
+                {products.map((product) => (
+                    <ProductCard
+                        key={product.id}
+                        image={product.image}
+                        name={product.name}
+                        price={product.price}
+                    />
+                ))}
             </div>
 
         </div>
     )
 }
 
-export default featuredproduct
+export default FeaturedProduct
