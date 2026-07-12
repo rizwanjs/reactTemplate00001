@@ -8,7 +8,7 @@ import img4 from '../../assets/04.webp'
 import img5 from '../../assets/05.webp'
 
 const products = [
-    {image: img1, name: 'Classic White Sneakers', price: '49' },
+    { image: img1, name: 'Classic White Sneakers', price: '49' },
     { image: img2, name: 'Leather Crossbody Bag', price: '79' },
     { image: img3, name: 'Denim Jacket', price: '99' },
     { image: img4, name: 'Summer Floral Dress', price: '59' },
