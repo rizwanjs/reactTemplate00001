@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.webp'
 
 const Navbar = () => {
@@ -15,8 +16,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-10 text-lg">
-                    <a href="#">Home</a>
-                    <a href="#">Products</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/product">Products</Link>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                     <a href="#">Cart</a>
