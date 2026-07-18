@@ -30,7 +30,7 @@ function RelatedProducts() {
               <img
                 src={p.img}
                 alt={p.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300"
               />
             </div>
             <div className="p-3 bg-white">

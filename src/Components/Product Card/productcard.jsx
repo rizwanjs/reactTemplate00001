@@ -12,7 +12,7 @@ const ProductCard = ({
     return (
         <div className="w-64 bg-white rounded-md shadow-md overflow-hidden">
             <div className="relative group overflow-hidden">
-                <img src={image} alt={name} className="w-full h-72 object-cover" />
+                <img src={image} alt={name} className="w-full h-72 object-cover object-top" />
                 {/* ... wishlist/quick-view buttons same rahenge ... */}
             </div>
 
