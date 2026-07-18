@@ -17,7 +17,10 @@ const Navbar = () => {
 
                 <div className="flex flex-wrap gap-10 text-lg">
                     <Link to="/">Home</Link>
-                    <Link to="/product">Products</Link>
+                    <Link to="/">About</Link>
+                    <Link to="/">Contact</Link>
+                    <Link to="/"></Link>
+                    <Link to="/">Home</Link>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                     <a href="#">Cart</a>

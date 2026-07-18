@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Heart, Search, Bell, User, Moon, ShoppingBag, Star } from "lucide-react";
 
-// Apni images ka path is folder structure ke hisaab se update kar lein
-// (agar images src/assets/ me hain to ye import waise hi kaam karega)
 import img1 from "../assets/01.jpg";
 import img2 from "../assets/02.jpg";
 import img3 from "../assets/03.jpg";
@@ -26,7 +24,8 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
-      {/* Navbar */}
+      
+      
       <header className="flex items-center justify-between px-8 py-4 border-b border-gray-200">
         <div>
           <h1 className="text-lg font-bold tracking-wide leading-none">SHOPINGO</h1>
