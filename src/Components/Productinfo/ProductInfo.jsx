@@ -1,18 +1,28 @@
+import { useParams } from 'react-router-dom'
+import { products } from '../Product/product'
+
 function ProductInfo() {
+  const { id } = useParams()
+  const product = products.find((p) => p.id === Number(id))
+
+  if (!product) {
+    return <p className="text-center text-gray-500">Product not found</p>
+  }
+
   return (
     <div className="flex flex-col">
-      <h1 className="text-2xl font-semibold text-gray-900">Check Pink Kurta</h1>
-      <p className="text-sm text-gray-500 mt-1">Women Pink &amp; Off-White Printed Kurta with Palazzos</p>
+      <h1 className="text-2xl font-semibold text-gray-900">{product.name}</h1>
+      <p className="text-sm text-gray-500 mt-1">{product.description}</p>
 
       <div className="flex items-center gap-3 mt-4">
-        <span className="bg-green-100 text-green-700 text-sm font-semibold px-2 py-0.5 rounded">4.8</span>
-        <span className="text-sm text-gray-600">162 Ratings</span>
+        <span className="bg-green-100 text-green-700 text-sm font-semibold px-2 py-0.5 rounded">{product.rating}</span>
+        <span className="text-sm text-gray-600">{product.ratingsCount} Ratings</span>
       </div>
 
       <hr className="my-5 border-gray-200" />
 
       <div className="flex items-baseline gap-3">
-        <span className="text-3xl font-semibold text-gray-900">$458</span>
+        <span className="text-3xl font-semibold text-gray-900">${product.price}</span>
       </div>
       <p className="text-sm text-green-600 mt-1">inclusive of all taxes</p>
 
@@ -44,13 +54,7 @@ function ProductInfo() {
       <div>
         <h3 className="text-sm font-semibold text-gray-900 mb-3">Product Details</h3>
         <p className="text-sm text-gray-500 leading-relaxed">
-          There are many variations of passages of Lorem Ipsum. All the Lorem Ipsum
-          generators on the Internet tend to repeat. Contrary to popular belief,
-          Lorem Ipsum is not simply random text — it has roots in a piece of classical literature.
-        </p>
-        <p className="text-sm text-gray-500 leading-relaxed mt-3">
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
-          for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum.
+          {product.description}
         </p>
       </div>
     </div>

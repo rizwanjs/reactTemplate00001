@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <div className="flex items-center justify-around">
                 
-                <div></div>
+                
 
                 <div >
                     <img className="mr-10 h-10" src={logo} alt="Logo" />
