@@ -45,12 +45,12 @@ const footer = () => {
                 <h2 className="text-lg font-semibold">
                     Support
                 </h2>
-                <p>support@example.com</p>
+                <p className="hover:underline cursor-pointer">support@example.com</p>
 
                 <h2 className="text-lg font-semibold">
                     Toll Free
                 </h2>
-                <p>+1 234 567 890</p>
+                <p className="hover:underline cursor-pointer">+1 234 567 890</p>
             </div>
         </div>
     )
