@@ -11,7 +11,7 @@ function ProductGallery() {
 
   return (
     <div>
-      <div className="rounded-md overflow-hidden bg-gray-100 mb-4 aspect-[3/4]">
+      <div className="rounded-md overflow-hidden bg-gray-100 mb-4 aspect-3/4">
         <img 
           src={product.image} 
           alt={product.name} 
@@ -19,7 +19,7 @@ function ProductGallery() {
         />
       </div>
       <div className="img-grid grid grid-cols-4 gap-3">
-        <div className="rounded-md overflow-hidden bg-gray-100 aspect-[3/4] border-2 border-gray-900">
+        <div className="rounded-md overflow-hidden bg-gray-100 aspect-3/4 border-2 border-gray-900">
           <img 
             src={product.image} 
             alt={product.name} 
